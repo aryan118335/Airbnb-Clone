@@ -1,16 +1,70 @@
-# React + Vite
+📅 April 20: The Foundation
+Goal: Get a rough version of the homepage visible.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Partner A (You): * Setup the BrowserRouter in main.jsx.
 
-Currently, two official plugins are available:
+Create src/components/Navbar.jsx and src/components/Navbar.css.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Build a layout wrapper so the Navbar stays at the top of every page.
 
-## React Compiler
+Partner B: * Create src/components/CategoryBar.jsx.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Find icons (or use text for now) for: Amazing Pools, Cabins, Tiny Houses, Surfing.
 
-## Expanding the ESLint configuration
+Make the bar scrollable horizontally (overflow-x: auto).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Partner C: * Create src/data/listings.json. (Include: id, title, price, rating, image).
+
+Create src/components/ListingCard.jsx. Style the image to have border-radius: 12px.
+
+📅 April 21: Data & Routing
+Goal: Clickable cards and a grid layout.
+
+Partner A: * Set up Routes: / for Home and /listing/:id for the details.
+
+Create a placeholder pages/ListingDetail.jsx.
+
+Partner B: * Create src/components/ListingGrid.jsx.
+
+Use CSS Grid: display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;.
+
+Partner C: * "Map" the data: In ListingGrid, use .map() to turn each item in your JSON into a <ListingCard />.
+
+📅 April 22: The Detail Page
+Goal: Show specific information when a card is clicked.
+
+Partner A: * Use useParams() from React Router to grab the ID from the URL.
+
+Create the Image Gallery (one big image on the left, four small on the right).
+
+Partner B: * Build the "Reservation Widget" (the box on the right that shows price, dates, and the "Reserve" button).
+
+Make it position: sticky; top: 100px;.
+
+Partner C: * Create the "Host Information" and "Amenities" list sections.
+
+Add a "Star Rating" display component.
+
+📅 April 23: Interactivity
+Goal: Make it feel like a real app.
+
+Partner A: * Add a Search Filter. When someone types in the Navbar, the Grid should update.
+
+Partner B: * Add Category Filtering. Clicking "Cabins" should filter the JSON data to show only cabins.
+
+Partner C: * Implement the "Favorite" heart. Use useState to toggle the heart color from white to red.
+
+Build the site Footer.
+
+📅 April 24 - 25: Polish & Deploy
+Goal: Zero bugs and a live URL.
+
+All Partners:
+
+Responsiveness: Use Media Queries so it looks good on iPhones. (2 cards per row instead of 4).
+
+Cleanup: Remove any console.log and fix CSS overlaps.
+
+Merge: Merge all 3 branches into main.
+
+Deploy: Connect your GitHub to Vercel for an instant live link.
