@@ -1,0 +1,67 @@
+/* src/components/CategoryFilter/CategoryFilter.css */
+
+.category-filter {
+  border-bottom: 1px solid #ebebeb;
+  padding: 0 24px;
+  background: #fff;
+  position: sticky;
+  top: 80px;
+  z-index: 90;
+}
+
+.category-filter__scroll {
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 8px 0;
+}
+
+.category-filter__scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.category-filter__btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: border-color 0.15s, opacity 0.15s;
+  opacity: 0.7;
+  flex-shrink: 0;
+}
+
+.category-filter__btn:hover {
+  opacity: 1;
+  border-bottom-color: #ddd;
+}
+
+.category-filter__btn--active {
+  opacity: 1;
+  border-bottom-color: #222;
+}
+
+.category-filter__icon {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.category-filter__label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #222;
+}
+
+@media (max-width: 480px) {
+  .category-filter {
+    top: 64px;
+    padding: 0 12px;
+  }
+}
