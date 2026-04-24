@@ -16,7 +16,8 @@ A responsive Airbnb clone built with React as part of WAP Contest 4.
 - Event handling (`onClick`, `onChange`)
 
 ## Team
-| Name | Contribution |
+| Name: Stark and Spellbound | 
+| Contribution |
 |------|-------------|
 | Aryan | Navbar, SearchBar, HeroSection |
 | Jayraj | PropertyCard, PropertyList, CategoryFilter |
