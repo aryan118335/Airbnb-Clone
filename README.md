@@ -1,6 +1,6 @@
 # Airbnb Clone
 
-A responsive Airbnb clone built with React as part of WAP Contest 4.
+A responsive Airbnb clone built with React.
 
 ## Tech Stack
 - React (Vite)
